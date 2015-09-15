@@ -1,0 +1,26 @@
+<div class="title" id="longest">
+  <h1 class="title">Longest Run, Forest</h1>
+  <h2><%= @runs.order('distance DESC').last %></h2>
+</div>
+
+<div class="title" id="lastfive">
+  <h1>Last Five Runs</h1>
+  <% @runs.order("date DESC").limit(5).each do |run| %>
+    <h2>
+      <%= run.date %>,
+      <%= run.distance %> miles,
+      <%= run.mood %><span ="deets"><%= link_to "(deets)", run %></span>
+    </h2>
+  <% end %>
+</div>
+
+<div class="title" id="allruns">
+  <h1>All My Runs</h1>
+  <% @runs.order("date DESC").each do |run| %>
+    <h2>
+      <%= run.date %>
+      <%= run.distance %> miles
+      <%= run.mood %><span ="deets"><%= link_to "(deets)", run %></span>
+    </h2>
+  <% end %>
+</div>

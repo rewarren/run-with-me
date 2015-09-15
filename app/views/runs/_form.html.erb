@@ -1,0 +1,16 @@
+<div id="form">
+
+  <%= form_for @run do |f| %>
+  <p>
+    <%= f.label :distance %>
+    <%= f.text_field :distance, placeholder: "miles"%>
+  </p><p>
+    <%= f.label :time_duration, "Run Time" %>
+    <%= f.text_field :time_duration, placeholder: "hh:mm:ss" %>
+  </p><p>
+    <%= f.label :mood, "Post-Run Notes" %>
+    <%= f.text_field :mood, placeholder: "How are you feeling?" %>
+  </p><p>
+    <%= f.submit "Log my run"%>
+  </p>
+  <% end %>
