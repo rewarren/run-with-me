@@ -23,6 +23,23 @@ class RunsController < ApplicationController
   end
 
   def edit
+    @run = Run.find(params[:id])
+  end
+
+  def update
+    @run = Run.find(params[:id])
+
+    @run.update(run_params)
+
+    redirect_to run_path(@run)
+  end
+
+  def destroy
+    @run = Run.find(params[:id])
+
+    @run.destroy
+
+    redirect_to runs_path
   end
 
 private

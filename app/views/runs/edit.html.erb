@@ -1,0 +1,7 @@
+<%= render 'form' %>
+
+<%= form_for @run, method: :delete do |f| %>
+  <%= f.submit "Delete Run", class: "delete" %>
+<% end %>
+
+<%= link_to "Cancel", run_path %>
