@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Joglog</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <title>Run with Me</title>
+  <%= stylesheet_link_tag    'application', 'https://fonts.googleapis.com/css?family=Grand+Hotel', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<nav>
+  <div id="joglog">Run with me</div>
+  <div class="navlink">
+    <span id="navlastfive">Last Five</span>
+    <span id="navall">All Runs</span>
+    <span id="navlongest">Longest Distance</span>
+    <span id="navcalendar">Calendar View</span>
+    <span id="navnewrun"><%= link_to "New Run", new_run_path %></span>
+  </div>
+</nav>
 
 <%= yield %>
 
