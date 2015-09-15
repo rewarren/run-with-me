@@ -8,14 +8,14 @@
 </head>
 <body>
 <nav>
-  <div id="joglog">Run with me</div>
+  <div id="logo">Run with me</div>
   <div class="navlink">
-    <span id="navlastfive">Last Five</span>
-    <span id="navall">All Runs</span>
-    <span id="navlongest">Longest Distance</span>
-    <span id="navcalendar">Calendar View</span>
-    <span id="navnewrun"><%= link_to "New Run", new_run_path %></span>
+      <%= link_to "New Run", new_run_path %>
+      <%= link_to "My Runs", runs_path %>
+      <%= link_to "My Profile" %>
+      <%= link_to "Log Out" %>
   </div>
+  <div class="welcomename">Welcome, NAME!</div>
 </nav>
 
 <%= yield %>
