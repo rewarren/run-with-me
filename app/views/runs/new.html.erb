@@ -1,12 +1,18 @@
-<h1 id="timer">Start your run. Ready..Set..Go!</h1>
-<div class="">
-  <button id="reset">Reset</button>
+<h1>Start your run. Ready..Set..Go!</h1>
+<div class="timer">
   <button id="start">Start</button>
   <button id="pause">Pause</button>
+  <button id="reset">Reset</button>
 </div>
 
-<h1>Add a run!</h1>
+<div class="new">
+<h1>Log that jog (or it didn't happen)</h1>
 
-<%= render 'form' %>
+  <div class="form">
+    <%= render 'form' %>
 
-<%= link_to "back", root_path %>
+    <p class="cancel"><%= link_to "back", root_path %></p>
+  </div>
+
+
+</div>

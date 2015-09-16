@@ -1,7 +1,8 @@
-
+<div class="blerp">Date: <%= @run.created_at.strftime("%B %d, %Y") %></div>
 <div class="blerp">Distance: <%= @run.distance %> miles</div>
 <div class="blerp">Time: <%= @run.time_duration %></div>
 <div class="blerp">Thoughts: <%= @run.mood %></div>
+
 
 
 <%= link_to "edit", edit_run_path %>

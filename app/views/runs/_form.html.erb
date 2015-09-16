@@ -1,16 +1,17 @@
-<div id="form">
-
-  <%= form_for @run do |f| %>
+<%= form_for @run do |f| %>
   <p>
-    <%= f.label :distance %>
-    <%= f.text_field :distance, placeholder: "miles"%>
+    <%= f.label :created_at, "Run Date", class: "label" %>
+    <%= f.text_field :created_at, value: Time.now.strftime("%m/%d/%y"), class: "text" %>
   </p><p>
-    <%= f.label :time_duration, "Run Time" %>
-    <%= f.text_field :time_duration, placeholder: "hh:mm:ss" %>
+    <%= f.label :distance, "Distance", class: "label" %>
+    <%= f.text_field :distance, placeholder: "miles", class: "text" %>
   </p><p>
-    <%= f.label :mood, "Post-Run Notes" %>
-    <%= f.text_field :mood, placeholder: "How are you feeling?" %>
+    <%= f.label :time_duration, "Run Time", class: "label" %>
+    <%= f.text_field :time_duration, placeholder: "hh:mm:ss", class: "text" %>
+  </p><p>
+    <%= f.label :mood, "Post-Run Notes", class: "label" %>
+    <%= f.text_field :mood, placeholder: "How're you feeling?", class: "text" %>
   </p><p>
     <%= f.submit "Log my run"%>
   </p>
-  <% end %>
+<% end %>

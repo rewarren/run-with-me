@@ -13,6 +13,7 @@ class RunsController < ApplicationController
   end
 
   def create
+    # binding.pry
     @run = Run.new(run_params)
 
     if @run.save
@@ -44,7 +45,7 @@ class RunsController < ApplicationController
 
 private
   def run_params
-    params.require(:run).permit(:distance, :time_duration, :mood)
+    params.require(:run).permit(:created_at, :distance, :time_duration, :mood)
   end
 
 end

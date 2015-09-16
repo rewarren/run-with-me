@@ -1,7 +1,12 @@
-<%= render 'form' %>
 
-<%= form_for @run, method: :delete do |f| %>
-  <%= f.submit "Delete Run", class: "delete" %>
-<% end %>
+<h1>It's never too late to make a change.</h1>
+<p class="note"><strong>Please note:</strong> Run Date will pick up today's date regardless of when your run actually was. Please remember to update it if need be.</p>
+<div class="form">
+  <%= render 'form' %>
 
-<%= link_to "Cancel", run_path %>
+  <%= form_for @run, method: :delete do |f| %>
+    <%= f.submit "Delete Run", class: "delete" %>
+  <% end %>
+
+  <span class="cancel"><%= link_to "Cancel", run_path %></span>
+</div>

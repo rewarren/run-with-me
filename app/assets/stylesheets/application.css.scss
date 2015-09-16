@@ -3,46 +3,123 @@
  *= require_self
  */
 
-$fontheader: Grand Hotel, cursive;
 
+@import url(https://fonts.googleapis.com/css?family=Nobile|Righteous);
 
+$font1: Righteous, cursive;
+$font2: Nobile, sans-serif;
+$font3: Verdana, sans-serif;
 
- * {
-  margin: 0;
- }
+* {
+margin: 0;
+font-family: $font2;
+}
 
- nav {
-  background-color: rebeccapurple;
-  font-family: $fontheader;
-  font-size: 2em;
-  padding-bottom: 1em;
+nav {
+background-color: #f0f0f0;
+font-family: $font2;
+font-size: 2em;
+padding-bottom: 1em;
 
   #logo {
     font-size: 3em;
-    padding-bottom: .3em;
-    color: #f0f0f0;
+    padding: .1em 0 .3em 0;
+    color: #2899a9;
+    top: 10%;
+    font-family: $font1;
   }
 
   .navlink {
     padding-bottom: 1em;
     position: fixed;
     top: 5%;
-    right: 0;
+    right: 1%;
     a{
       text-decoration: none;
-      color: white;
+      color: #5ca8dc;
       border: .3em solid rgba(200, 200, 200, 0.4);
       padding: .5em;
       margin: 0;
     }
     a:hover {
-      background-color: rgba(200, 200, 200, 0.4)
+      background-color: rgba(200, 200, 200, 0.4);
     }
   }
+}
 
-  .welcomename {
-    background-color: #99CCFF;
-    position: relative;
+.welcomename {
+  display: none;
+  background-color: #fff;
+  color: tomato;
+  position: relative;
+  padding: .2em 0;
+}
+
+.new {
+  margin: 2em auto;
+}
+
+.timer {
+  margin: 1em;
+}
+
+.form {
+  margin: 2em auto;
+  font-family: $font2;
+  p {
+  border: .3em solid #f0f0f0;
+  padding: .3em .2em;
+  margin: .3em;
+  width: 70%;
+    .label {
+      font-size: 2em;
+      font-family: $font2;
+      width: 50px;
+      padding-right: .3em;
+    }
+    .text {
+      font-size: 2em;
+    }
+    .cancel, .delete, .submit {
+      background-color: red;
+    }
   }
+}
+
+.note {
+  font-size: 1.2em;
+
+  strong {
+    // text-decoration: underline;
+    color: tomato;
+  }
+}
+
+//index page
+.log {
+  font-family: $font3;
+  font-size: 1.3em;
+  font-weight: 200;
+  padding: .5em;
+  border-bottom: .1em solid tomato;
+
+  a {
+    text-decoration: none;
+    color: #2cb673;
+    font-size:.8em;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+}
+
+#longest, #lastfive, #allruns {
+  margin: 1em;
+  padding-top: 2em;
+}
+
+
+//show page
+.details {
 
 }
