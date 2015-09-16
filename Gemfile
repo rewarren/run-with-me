@@ -45,4 +45,5 @@ group :development, :test do
   gem 'spring'
 end
 
+gem 'figaro'
 gem 'rails_12factor', group: :production
