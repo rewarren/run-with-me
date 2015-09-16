@@ -17,9 +17,11 @@ ActiveRecord::Schema.define(version: 20150914143747) do
   enable_extension "plpgsql"
 
   create_table "runs", force: :cascade do |t|
-    t.string "distance"
-    t.string "time_duration"
-    t.string "mood"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.string   "distance"
+    t.string   "time_duration"
+    t.text     "mood"
   end
 
 end

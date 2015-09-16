@@ -2,9 +2,9 @@ class CreateRuns < ActiveRecord::Migration
   def change
     create_table :runs do |t|
       t.timestamps null: false
-      t.string :distance
+      t.integer :distance
       t.string :time_duration
-      t.string :mood
+      t.text :mood
     end
   end
 end
