@@ -20,6 +20,7 @@ background-color: #f0f0f0;
 font-family: $font2;
 font-size: 2em;
 padding-bottom: 1em;
+text-align: center;
 
   #logo {
     font-size: 3em;
@@ -31,8 +32,7 @@ padding-bottom: 1em;
 
   .navlink {
     padding-bottom: 1em;
-    position: fixed;
-    top: 5%;
+    top: 50px;
     right: 1%;
     a{
       text-decoration: none;

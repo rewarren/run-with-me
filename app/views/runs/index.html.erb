@@ -1,8 +1,3 @@
-<div class="title" id="longest">
-  <h1 class="title">Longest Run, Forest</h1>
-  <h2><%= @runs.order('distance DESC').last %></h2>
-</div>
-
 <div class="title" id="lastfive">
   <h1>Last Five Runs</h1>
   <% @runs.order("created_at DESC").limit(5).each do |run| %>

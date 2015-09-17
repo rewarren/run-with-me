@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<nav>
+<nav class="container">
   <div id="logo">Run with me</div>
   <div class="navlink">
       <%= link_to "New Run", new_run_path %>
@@ -18,7 +18,9 @@
   <div class="welcomename">Welcome, NAME!</div>
 </nav>
 
-<%= yield %>
+<div class="content">
+  <%= yield %>
+</div>
 
 </body>
 </html>
