@@ -21,6 +21,9 @@ font-family: $font2;
 font-size: 2em;
 padding-bottom: 1em;
 text-align: center;
+  ul {
+    list-style: none;
+  }
 
   #logo {
     font-size: 3em;
@@ -34,12 +37,18 @@ text-align: center;
     padding-bottom: 1em;
     top: 50px;
     right: 1%;
+
+    li {
+      display: inline-block;
+      margin-right: .2em;
+    }
+
     a{
       text-decoration: none;
       color: #5ca8dc;
       border: .3em solid rgba(200, 200, 200, 0.4);
       padding: .5em;
-      margin: 0;
+      margin: 10px;
     }
     a:hover {
       background-color: rgba(200, 200, 200, 0.4);
@@ -119,7 +128,22 @@ text-align: center;
 }
 
 
-//show page
-.details {
+@media (min-width: 400px){
+  body {
+    // background-color: red;
+  }
+  #logo {
+    font-size: 70%;
+  }
+  a {
+    margin-right: 40px;
+    text-align: center;
+    width: 200px;
+  }
+}
 
+@media (min-width: 800px) {
+  body {
+    // background-color: green;
+  }
 }

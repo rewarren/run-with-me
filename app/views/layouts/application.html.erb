@@ -7,14 +7,14 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<nav class="container">
+<nav>
   <div id="logo">Run with me</div>
-  <div class="navlink">
-      <%= link_to "New Run", new_run_path %>
-      <%= link_to "My Runs", runs_path %>
-      <%= link_to "My Profile" %>
-      <%= link_to "Log Out" %>
-  </div>
+  <ul class="navlink">
+    <li><%= link_to "New Run", new_run_path %></li>
+    <li><%= link_to "My Runs", runs_path %></li>
+    <li><%= link_to "My Profile" %></li>
+    <li><%= link_to "Log Out" %></li>
+  </ul>
   <div class="welcomename">Welcome, NAME!</div>
 </nav>
 
