@@ -5,7 +5,7 @@ Run With Me is an application that allows runners to keep a log of their runs.  
 Run With Me is built with Rails. 
 
 Currently built to be viewed on a desktop, but in progress for mobile capabilities.
- Other features to look out for in the future:
+Other features to look out for in the future:
 * A timer to keep track for you.
 * A distance tracker.
 
