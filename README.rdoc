@@ -1,28 +1,11 @@
-== README
+== Run With Me
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Run With Me is an application that allows runners to keep a log of their runs.  It's like adding tasks to your to-do list after the fact, just so you can cross them out, because it just feels good to see productivity no matter what it is! Whether you're in transition from walker to runner, or run so often that you are constantly buying new running shoes, Run With Me is a great way to track progress! Just log how long you ran and the distance, and how you felt afterwards. It's that simple.
 
-Things you may want to cover:
+Run With Me is built with Rails. 
 
-* Ruby version
+Currently built to be viewed on a desktop, but in progress for mobile capabilities.
+ Other features to look out for in the future:
+* A timer to keep track for you.
+* A distance tracker.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
